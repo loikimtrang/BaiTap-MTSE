@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Thành Công</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .success-container {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 3rem;
+            animation: pulse 2s infinite;
+            box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 15px 40px rgba(40, 167, 69, 0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+            }
+        }
+
+        .success-title {
+            color: #28a745;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(40, 167, 69, 0.1);
+        }
+
+        .success-message {
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .success-details {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            border-left: 4px solid #28a745;
+        }
+
+        .success-details p {
+            color: #495057;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .success-details p:last-child {
+            margin-bottom: 0;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            min-width: 150px;
+            justify-content: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+        }
+
+        .btn-outline {
+            background: white;
+            color: #6c757d;
+            border: 2px solid #e9ecef;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-outline:hover {
+            background: #f8f9fa;
+            border-color: #667eea;
+            color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        /* Confetti Animation */
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #667eea;
+            animation: confetti-fall 3s linear infinite;
+        }
+
+        .confetti-piece:nth-child(odd) {
+            background: #28a745;
+            animation-delay: -0.5s;
+        }
+
+        .confetti-piece:nth-child(even) {
+            background: #ffc107;
+            animation-delay: -1s;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .success-container {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
+            }
+
+            .success-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2.5rem;
+            }
+
+            .success-title {
+                font-size: 1.8rem;
+            }
+
+            .success-message {
+                font-size: 1rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* Auto redirect countdown */
+        .countdown {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .countdown-number {
+            font-weight: bold;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Confetti Animation -->
+    <div class="confetti" id="confetti"></div>
+
+    <div class="success-container">
+        <div class="success-icon">
+            ✅
+        </div>
+        
+        <h1 class="success-title">Đăng Ký Thành Công!</h1>
+        
+        <p class="success-message">
+            Chúc mừng! Tài khoản của bạn đã được tạo thành công.<br>
+            Bạn có thể bắt đầu sử dụng hệ thống ngay bây giờ.
+        </p>
+
+        <div class="success-details">
+            <p>✨ Tài khoản đã được kích hoạt</p>
+            <p>📧 Email xác nhận đã được gửi</p>
+            <p>🔐 Thông tin đã được mã hóa an toàn</p>
+            <p>🎉 Chào mừng bạn đến với hệ thống!</p>
+        </div>
+
+        <div class="button-group">
+            <a href="/get-crud" class="btn btn-primary">
+                📋 Xem danh sách
+            </a>
+            <a href="/crud" class="btn btn-secondary">
+                ➕ Thêm người khác
+            </a>
+            <a href="/" class="btn btn-outline">
+                🏠 Về trang chủ
+            </a>
+        </div>
+
+        <!-- Auto redirect countdown (optional) -->
+        <!-- <div class="countdown" id="countdown">
+            Tự động chuyển đến danh sách sau <span class="countdown-number" id="timer">10</span> giây
+        </div> -->
+    </div>
+
+    <script>
+        // Tạo confetti effect
+        function createConfetti() {
+            const confetti = document.getElementById('confetti');
+            const colors = ['#667eea', '#28a745', '#ffc107', '#dc3545', '#17a2b8'];
+            
+            for (let i = 0; i < 50; i++) {
+                const piece = document.createElement('div');
+                piece.className = 'confetti-piece';
+                piece.style.left = Math.random() * 100 + '%';
+                piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                piece.style.animationDelay = Math.random() * 2 + 's';
+                piece.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                confetti.appendChild(piece);
+            }
+
+            // Remove confetti after animation
+            setTimeout(() => {
+                confetti.innerHTML = '';
+            }, 5000);
+        }
+
+        // Auto redirect countdown (uncomment if needed)
+        /*
+        let timeLeft = 10;
+        const timer = document.getElementById('timer');
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timer.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = '/get-crud';
+            }
+        }, 1000);
+        */
+
+        // Start confetti when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            createConfetti();
+        });
+
+        // Add click sound effect (optional)
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Add sound effect if needed
+                console.log('Button clicked:', this.textContent);
+            });
+        });
+    </script>
+</body>
+</html>

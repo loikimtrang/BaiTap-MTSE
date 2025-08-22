@@ -11,7 +11,7 @@ let getCRUD = (req, res) => {
 let postCRUD = async (req, res) => {
   let msg = await CRUDService.createNewUser(req.body);
   console.log(msg);
-  return res.send('Post CRUD to server');
+  return res.redirect('/register-success');
 };
 
 let getAllCRUD = async (req, res) => {
@@ -34,6 +34,10 @@ let deleteCRUD = async (req, res) => {
   return res.redirect('/get-crud');
 };
 
+let getRegisterSuccess = (req, res) => {
+  return res.render('users/registerSuccess.ejs');
+};
+
 export default {
   getHomePage,
   getCRUD,
@@ -42,4 +46,5 @@ export default {
   getEditCRUD,
   putCRUD,
   deleteCRUD,
+  getRegisterSuccess,
 };
