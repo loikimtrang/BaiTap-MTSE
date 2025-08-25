@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh Sửa Thông Tin</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .form-title {
+            color: #333;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-subtitle {
+            color: #6c757d;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.8rem;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            color: #495057;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #667eea;
+            background-color: white;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .form-input:hover {
+            border-color: #ced4da;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d, #495057);
+            color: white;
+            box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(108, 117, 125, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        /* Input animation effects */
+        .form-group {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-group::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s ease;
+        }
+
+        .form-group:focus-within::after {
+            width: 100%;
+        }
+
+        /* Success animation */
+        .success-animation {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+            display: none;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Loading state */
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        .loading-spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid transparent;
+            border-top: 2px solid currentColor;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
+            }
+
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .form-title {
+                font-size: 1.5rem;
+            }
+
+            .form-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <div class="form-icon">✏️</div>
+            <h2 class="form-title">Chỉnh Sửa Thông Tin</h2>
+            <p class="form-subtitle">Cập nhật thông tin người dùng</p>
+        </div>
+
+        <form action="/put-crud" method="post" id="updateForm">
+            <input type="hidden" name="id" value="<%= data.id %>" />
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Tên</label>
+                    <input 
+                        type="text" 
+                        id="firstName"
+                        name="firstName" 
+                        class="form-input"
+                        value="<%= data.firstName %>" 
+                        placeholder="Nhập tên"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Họ</label>
+                    <input 
+                        type="text" 
+                        id="lastName"
+                        name="lastName" 
+                        class="form-input"
+                        value="<%= data.lastName %>" 
+                        placeholder="Nhập họ"
+                        required
+                    />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa chỉ</label>
+                <input 
+                    type="text" 
+                    id="address"
+                    name="address" 
+                    class="form-input"
+                    value="<%= data.address %>" 
+                    placeholder="Nhập địa chỉ"
+                />
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary" id="updateBtn">
+                    <span class="btn-text">💾 Cập nhật</span>
+                    <div class="loading-spinner" style="display: none;"></div>
+                </button>
+                <a href="/get-crud" class="btn btn-secondary">
+                    ↩️ Quay lại
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Success notification -->
+    <div class="success-animation" id="successNotification">
+        ✅ Cập nhật thành công!
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('updateForm');
+            const updateBtn = document.getElementById('updateBtn');
+            const btnText = updateBtn.querySelector('.btn-text');
+            const spinner = updateBtn.querySelector('.loading-spinner');
+
+            // Form submission with loading state
+            form.addEventListener('submit', function(e) {
+                // Show loading state
+                updateBtn.disabled = true;
+                btnText.style.display = 'none';
+                spinner.style.display = 'block';
+                
+                // Optional: You can prevent default and use AJAX here
+                // e.preventDefault();
+                // ... AJAX code ...
+            });
+
+            // Auto-focus first input
+            document.getElementById('firstName').focus();
+
+            // Input validation feedback
+            const inputs = document.querySelectorAll('.form-input');
+            inputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    if (this.required && !this.value.trim()) {
+                        this.style.borderColor = '#dc3545';
+                    } else {
+                        this.style.borderColor = '#28a745';
+                    }
+                });
+
+                input.addEventListener('input', function() {
+                    if (this.style.borderColor === 'rgb(220, 53, 69)') {
+                        this.style.borderColor = '#e9ecef';
+                    }
+                });
+            });
+
+            // Keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                // Ctrl/Cmd + Enter to submit
+                if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                    form.submit();
+                }
+                // Escape to go back
+                if (e.key === 'Escape') {
+                    window.history.back();
+                }
+            });
+        });
+
+        // Show success notification (if needed)
+        function showSuccess() {
+            const notification = document.getElementById('successNotification');
+            notification.style.display = 'block';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
