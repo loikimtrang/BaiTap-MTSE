@@ -4,28 +4,25 @@ import sequelize from './index';
 class User extends Model {
   public id!: number;
   public email!: string;
+  public password!: string;
   public firstName!: string;
   public lastName!: string;
   public address!: string;
-  public createdAt!: Date;
-  public updatedAt!: Date;
+  public gender!: boolean;
+  public phoneNumber!: string;
+  public roleId!: string;
 }
 
 User.init(
   {
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    firstName: {
-      type: DataTypes.STRING,
-    },
-    lastName: {
-      type: DataTypes.STRING,
-    },
-    address: {
-      type: DataTypes.STRING,
-    },
+    email: DataTypes.STRING,
+    password: DataTypes.STRING,
+    firstName: DataTypes.STRING,
+    lastName: DataTypes.STRING,
+    address: DataTypes.STRING,
+    gender: DataTypes.BOOLEAN,
+    phoneNumber: DataTypes.STRING,
+    roleId: DataTypes.STRING,
   },
   {
     sequelize,
