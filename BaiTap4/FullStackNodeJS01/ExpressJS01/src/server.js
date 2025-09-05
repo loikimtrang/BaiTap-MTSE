@@ -2,7 +2,11 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import api from './routes/api.js';
+
+import user from './routes/user.js';
+import product from './routes/productRoutes.js';
+import category from './routes/categoryRoutes.js';
+
 import configViewEngine from './config/viewEngine.js';
 import { connectDB, sequelize } from './config/database.js';
 
@@ -12,12 +16,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 configViewEngine(app);
-app.use('/api', api);
 
+// API ROUTES
+app.use('/user', user);
+app.use('/products', product);
+app.use('/categories', category);
+
+// START APP
 const start = async () => {
   await connectDB();
-  await sequelize.sync(); 
+  await sequelize.sync();
   const port = process.env.PORT || 8000;
   app.listen(port, () => console.log(`Backend NodeJS app listening on port ${port}`));
 };
+
 start();

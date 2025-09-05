@@ -1,15 +1,15 @@
 import instance from './axios.customize';
 
 export const createUserApi = (name, email, password) =>
-  instance.post('/api/register', { name, email, password });
+  instance.post('/user/register', { name, email, password });
 
 export const loginApi = (email, password) =>
-  instance.post('/api/login', { email, password });
+  instance.post('/user/login', { email, password });
 
-export const getAccountApi = () => instance.get('/api/account');
+export const getAccountApi = () => instance.get('/user/account');
 
 export const forgotPasswordApi = (email) =>
-  instance.post('/api/forgot-password', { email });
+  instance.post('/user/forgot-password', { email });
 
 export const resetPasswordApi = (token, password) =>
-  instance.post('/api/reset-password', { token, password });
+  instance.post('/user/reset-password', { token, password });

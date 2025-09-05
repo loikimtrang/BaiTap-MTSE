@@ -7,6 +7,7 @@ import RegisterPage from './pages/RegisterPage';
 import HomePage from './pages/HomePage';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
+import UserInfoPage from './pages/UserInfoPage';
 import './styles/global.css';
 
 const Private = ({ children }) => {
@@ -18,7 +19,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <AuthProvider>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Private><HomePage /></Private>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/user-info" element={<UserInfoPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/forgot" element={<ForgotPassword />} />

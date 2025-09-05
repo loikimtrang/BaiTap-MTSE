@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Macbook 1",
+    "price": 1001,
+    "description": "Mô tả sản phẩm máy laptop 1",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 2",
+    "price": 1002,
+    "description": "Mô tả sản phẩm máy laptop 2",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 3",
+    "price": 1003,
+    "description": "Mô tả sản phẩm máy laptop 3",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 4",
+    "price": 1004,
+    "description": "Mô tả sản phẩm máy laptop 4",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 5",
+    "price": 1005,
+    "description": "Mô tả sản phẩm máy laptop 5",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 6",
+    "price": 1006,
+    "description": "Mô tả sản phẩm máy laptop 6",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 7",
+    "price": 1007,
+    "description": "Mô tả sản phẩm máy laptop 7",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 8",
+    "price": 1008,
+    "description": "Mô tả sản phẩm máy laptop 8",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 9",
+    "price": 1009,
+    "description": "Mô tả sản phẩm máy laptop 9",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 10",
+    "price": 1010,
+    "description": "Mô tả sản phẩm máy laptop 10",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 11",
+    "price": 1011,
+    "description": "Mô tả sản phẩm máy laptop 11",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 12",
+    "price": 1012,
+    "description": "Mô tả sản phẩm máy laptop 12",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 13",
+    "price": 1013,
+    "description": "Mô tả sản phẩm máy laptop 13",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 14",
+    "price": 1014,
+    "description": "Mô tả sản phẩm máy laptop 14",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 15",
+    "price": 1015,
+    "description": "Mô tả sản phẩm máy laptop 15",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 16",
+    "price": 1016,
+    "description": "Mô tả sản phẩm máy laptop 16",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 17",
+    "price": 1017,
+    "description": "Mô tả sản phẩm máy laptop 17",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 18",
+    "price": 1018,
+    "description": "Mô tả sản phẩm máy laptop 18",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 19",
+    "price": 1019,
+    "description": "Mô tả sản phẩm máy laptop 19",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 20",
+    "price": 1020,
+    "description": "Mô tả sản phẩm máy laptop 20",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 21",
+    "price": 1021,
+    "description": "Mô tả sản phẩm máy laptop 21",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 22",
+    "price": 1022,
+    "description": "Mô tả sản phẩm máy laptop 22",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 23",
+    "price": 1023,
+    "description": "Mô tả sản phẩm máy laptop 23",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 24",
+    "price": 1024,
+    "description": "Mô tả sản phẩm máy laptop 24",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 25",
+    "price": 1025,
+    "description": "Mô tả sản phẩm máy laptop 25",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 26",
+    "price": 1026,
+    "description": "Mô tả sản phẩm máy laptop 26",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 27",
+    "price": 1027,
+    "description": "Mô tả sản phẩm máy laptop 27",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 28",
+    "price": 1028,
+    "description": "Mô tả sản phẩm máy laptop 28",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 29",
+    "price": 1029,
+    "description": "Mô tả sản phẩm máy laptop 29",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 30",
+    "price": 1030,
+    "description": "Mô tả sản phẩm máy laptop 30",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 31",
+    "price": 1031,
+    "description": "Mô tả sản phẩm máy laptop 31",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 32",
+    "price": 1032,
+    "description": "Mô tả sản phẩm máy laptop 32",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 33",
+    "price": 1033,
+    "description": "Mô tả sản phẩm máy laptop 33",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 34",
+    "price": 1034,
+    "description": "Mô tả sản phẩm máy laptop 34",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 35",
+    "price": 1035,
+    "description": "Mô tả sản phẩm máy laptop 35",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 36",
+    "price": 1036,
+    "description": "Mô tả sản phẩm máy laptop 36",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 37",
+    "price": 1037,
+    "description": "Mô tả sản phẩm máy laptop 37",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 38",
+    "price": 1038,
+    "description": "Mô tả sản phẩm máy laptop 38",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 39",
+    "price": 1039,
+    "description": "Mô tả sản phẩm máy laptop 39",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  },
+  {
+    "name": "Macbook 40",
+    "price": 1040,
+    "description": "Mô tả sản phẩm máy laptop 40",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3
+  }
+]
