@@ -9,11 +9,13 @@ import category from './routes/categoryRoutes.js';
 
 import configViewEngine from './config/viewEngine.js';
 import { connectDB, sequelize } from './config/database.js';
+import { timer } from './middleware/timer.js';
 
 const app = express();
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(timer);
 
 configViewEngine(app);
 

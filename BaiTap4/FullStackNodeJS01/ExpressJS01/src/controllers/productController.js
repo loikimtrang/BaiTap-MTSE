@@ -7,9 +7,12 @@ import {
   deleteProduct,
 } from '../services/productService.js';
 
+import { buildApiResponse } from '../utils/responseBuilder.js';
+
 export const listProductsCtrl = async (req, res) => {
   const { page, limit, categoryId, search, sortBy, order } = req.query;
-  const result = await getProductsPaged({
+
+  const { meta, data } = await getProductsPaged({
     page,
     limit,
     categoryId: categoryId ? Number(categoryId) : undefined,
@@ -17,8 +20,27 @@ export const listProductsCtrl = async (req, res) => {
     sortBy,
     order: (order || 'ASC').toUpperCase() === 'DESC' ? 'DESC' : 'ASC',
   });
-  return res.status(200).json(result);
+
+  const paginatedData = {
+    items: data,
+    totalItems: meta.total,
+    totalPages: meta.totalPages,
+    currentPage: meta.page,
+    perPage: meta.perPage,
+    hasNextPage: meta.hasNext,
+    hasPrevPage: meta.hasPrev
+  };
+
+  return res.status(200).json(
+    buildApiResponse({
+      message: 'Lấy danh sách sản phẩm thành công',
+      data: paginatedData,
+      path: req.originalUrl,
+      durationMs: Date.now() - req.startTime
+    })
+  );
 };
+
 
 export const createProductCtrl = async (req, res) => {
   const product = await createProduct(req.body);
