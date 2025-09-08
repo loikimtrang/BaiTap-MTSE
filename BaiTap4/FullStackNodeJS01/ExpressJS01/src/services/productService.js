@@ -100,60 +100,80 @@ export const searchProductsFuzzy = async ({
   hasDiscount,
   minViews,
   maxViews,
-  sortBy = 'createdAt',
+  sortBy = 'price',
   order = 'desc',
 }) => {
   const from = (page - 1) * limit;
   const must = [];
   const filter = [];
 
+  // Fuzzy search theo tên sản phẩm
   if (search) {
     must.push({
       match: {
         name: {
           query: search,
-          fuzziness: 'AUTO'
-        }
-      }
+          fuzziness: 'AUTO',
+        },
+      },
     });
   }
 
+  // Lọc theo category
   if (categoryId) filter.push({ term: { categoryId } });
-  if (typeof hasDiscount === 'boolean') filter.push({ term: { hasDiscount } });
 
+  // Lọc theo khuyến mãi
+  if (typeof hasDiscount === 'boolean') {
+    filter.push({ term: { hasDiscount } });
+  }
+
+  // Lọc theo khoảng giá
   if (minPrice || maxPrice) {
     filter.push({
       range: {
         price: {
           gte: minPrice || 0,
-          lte: maxPrice || 99999999
-        }
-      }
+          lte: maxPrice || 999999999,
+        },
+      },
     });
   }
 
+  // Lọc theo lượt xem
   if (minViews || maxViews) {
     filter.push({
       range: {
         views: {
           gte: minViews || 0,
-          lte: maxViews || 99999999
-        }
-      }
+          lte: maxViews || 999999999,
+        },
+      },
     });
   }
+
+  // ✅ VALIDATE FIELD ĐƯỢC SORT
+  const allowedSortFields = ['price', 'name', 'views', 'id', 'createdAt'];
+  const sortField = allowedSortFields.includes(sortBy) ? sortBy : 'price';
+  const sortDirection = (order || 'desc').toLowerCase();
 
   const result = await esClient.search({
     index: 'products',
     from,
     size: limit,
-    sort: [`${sortBy}:${order}`],
+    sort: [
+      {
+        [sortField]: {
+          order: sortDirection,
+          unmapped_type: 'long', // phòng tránh lỗi nếu 1 số shard chưa có field
+        },
+      },
+    ],
     query: {
       bool: {
         must,
-        filter
-      }
-    }
+        filter,
+      },
+    },
   });
 
   const total = result.hits.total.value;
@@ -168,18 +188,30 @@ export const searchProductsFuzzy = async ({
       hasPrev: page > 1,
       hasNext: page * limit < total,
     },
-    data
+    data,
   };
 };
 
 
+/**
+ * Đồng bộ tất cả sản phẩm lên Elasticsearch
+ */
 export const syncAllProductsToElasticsearch = async () => {
   const products = await Product.findAll();
   const body = [];
 
   for (const product of products) {
     body.push({ index: { _index: 'products', _id: product.id.toString() } });
-    body.push(product.toJSON());
+    body.push({
+      id: product.id,
+      name: product.name,
+      description: product.description || '',
+      price: product.price || 0,
+      views: product.views || 0,
+      hasDiscount: product.hasDiscount || false,
+      categoryId: product.categoryId,
+      imageUrl: product.imageUrl || '',
+    });
   }
 
   if (body.length > 0) {

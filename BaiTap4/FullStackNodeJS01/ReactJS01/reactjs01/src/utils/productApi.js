@@ -29,3 +29,7 @@ export const getProductListApi = (params) =>
 // Lấy danh sách sản phẩm theo danh mục (RESTful)
 export const getProductsByCategoryApi = (categoryId, params = {}) =>
   instance.get(`/categories/${categoryId}/products`, { params });
+
+// 🔍 Fuzzy search sản phẩm (theo điều kiện nâng cao)
+export const searchProductsFuzzyApi = (params) =>
+  instance.get('/products/search', { params });

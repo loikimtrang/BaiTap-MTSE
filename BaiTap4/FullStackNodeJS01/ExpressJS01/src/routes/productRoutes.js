@@ -18,10 +18,10 @@ router.all('*', delay(200));
 // Sản phẩm
 router.post('/',     auth, createProductCtrl);
 router.get('/',      listProductsCtrl);
+router.get('/search', searchProductsFuzzyCtrl); 
 router.get('/:id',   getProductCtrl);
 router.put('/:id',   auth, updateProductCtrl);
 router.delete('/:id', auth, deleteProductCtrl);
-router.get('/search', searchProductsFuzzyCtrl); 
 router.post('/sync-es', syncAllProductsCtrl);
 
 export default router;

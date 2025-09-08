@@ -77,7 +77,7 @@ export const searchProductsFuzzyCtrl = async (req, res) => {
     minViews,
     maxViews,
     sortBy,
-    order
+    order,
   } = req.query;
 
   const result = await searchProductsFuzzy({
@@ -87,11 +87,16 @@ export const searchProductsFuzzyCtrl = async (req, res) => {
     categoryId: categoryId ? Number(categoryId) : undefined,
     minPrice: minPrice ? Number(minPrice) : undefined,
     maxPrice: maxPrice ? Number(maxPrice) : undefined,
-    hasDiscount: hasDiscount === 'true' ? true : hasDiscount === 'false' ? false : undefined,
+    hasDiscount:
+      hasDiscount === 'true'
+        ? true
+        : hasDiscount === 'false'
+        ? false
+        : undefined,
     minViews: minViews ? Number(minViews) : undefined,
     maxViews: maxViews ? Number(maxViews) : undefined,
     sortBy,
-    order
+    order,
   });
 
   return res.status(200).json(
@@ -99,14 +104,17 @@ export const searchProductsFuzzyCtrl = async (req, res) => {
       message: 'Tìm kiếm sản phẩm thành công (fuzzy search)',
       data: {
         items: result.data,
-        ...result.meta
+        ...result.meta,
       },
       path: req.originalUrl,
-      durationMs: Date.now() - req.startTime
+      durationMs: Date.now() - req.startTime,
     })
   );
 };
 
+/**
+ * API: POST /products/sync-es
+ */
 export const syncAllProductsCtrl = async (req, res) => {
   const result = await syncAllProductsToElasticsearch();
 
@@ -115,7 +123,7 @@ export const syncAllProductsCtrl = async (req, res) => {
       message: 'Đồng bộ toàn bộ sản phẩm vào Elasticsearch thành công',
       data: result,
       path: req.originalUrl,
-      durationMs: Date.now() - req.startTime
+      durationMs: Date.now() - req.startTime,
     })
   );
 };
