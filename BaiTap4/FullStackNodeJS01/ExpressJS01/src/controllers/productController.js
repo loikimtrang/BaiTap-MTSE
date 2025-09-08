@@ -5,10 +5,11 @@ import {
   getProductById,
   updateProduct,
   deleteProduct,
+  searchProductsFuzzy,
+  syncAllProductsToElasticsearch 
 } from '../services/productService.js';
 
 import { buildApiResponse } from '../utils/responseBuilder.js';
-
 export const listProductsCtrl = async (req, res) => {
   const { page, limit, categoryId, search, sortBy, order } = req.query;
 
@@ -63,4 +64,58 @@ export const deleteProductCtrl = async (req, res) => {
   const success = await deleteProduct(req.params.id);
   if (!success) return res.status(404).json({ msg: 'Not found' });
   res.json({ msg: 'Deleted' });
+};
+export const searchProductsFuzzyCtrl = async (req, res) => {
+  const {
+    page,
+    limit,
+    search,
+    categoryId,
+    minPrice,
+    maxPrice,
+    hasDiscount,
+    minViews,
+    maxViews,
+    sortBy,
+    order
+  } = req.query;
+
+  const result = await searchProductsFuzzy({
+    page: Number(page) || 1,
+    limit: Number(limit) || 12,
+    search,
+    categoryId: categoryId ? Number(categoryId) : undefined,
+    minPrice: minPrice ? Number(minPrice) : undefined,
+    maxPrice: maxPrice ? Number(maxPrice) : undefined,
+    hasDiscount: hasDiscount === 'true' ? true : hasDiscount === 'false' ? false : undefined,
+    minViews: minViews ? Number(minViews) : undefined,
+    maxViews: maxViews ? Number(maxViews) : undefined,
+    sortBy,
+    order
+  });
+
+  return res.status(200).json(
+    buildApiResponse({
+      message: 'Tìm kiếm sản phẩm thành công (fuzzy search)',
+      data: {
+        items: result.data,
+        ...result.meta
+      },
+      path: req.originalUrl,
+      durationMs: Date.now() - req.startTime
+    })
+  );
+};
+
+export const syncAllProductsCtrl = async (req, res) => {
+  const result = await syncAllProductsToElasticsearch();
+
+  return res.json(
+    buildApiResponse({
+      message: 'Đồng bộ toàn bộ sản phẩm vào Elasticsearch thành công',
+      data: result,
+      path: req.originalUrl,
+      durationMs: Date.now() - req.startTime
+    })
+  );
 };

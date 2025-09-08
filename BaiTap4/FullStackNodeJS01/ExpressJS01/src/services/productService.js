@@ -1,5 +1,6 @@
 // services/productService.js
 import db from '../models/index.js';
+import esClient from '../utils/elasticsearch.js';
 const { Product, Category } = db;
 
 /**
@@ -53,19 +54,138 @@ export const getProductsPaged = async ({
   };
 };
 
-// Giữ lại các hàm cũ nếu bạn vẫn dùng nơi khác
-export const createProduct = (data) => Product.create(data);
+export const createProduct = async (data) => {
+  const product = await Product.create(data);
+
+  await esClient.index({
+    index: 'products',
+    id: product.id.toString(),
+    document: product.toJSON(),
+  });
+
+  return product;
+};
+
 export const getProductById = (id) =>
   Product.findByPk(id, { include: [{ model: Category, attributes: ['name'] }] });
+
 export const updateProduct = async (id, data) => {
   const product = await Product.findByPk(id);
   if (!product) return null;
+
   await product.update(data);
+
+  await esClient.index({
+    index: 'products',
+    id: product.id.toString(),
+    document: product.toJSON(),
+  });
+
   return product;
 };
+
 export const deleteProduct = async (id) => {
   const product = await Product.findByPk(id);
   if (!product) return null;
   await product.destroy();
   return true;
+};
+export const searchProductsFuzzy = async ({
+  page = 1,
+  limit = 12,
+  search,
+  categoryId,
+  minPrice,
+  maxPrice,
+  hasDiscount,
+  minViews,
+  maxViews,
+  sortBy = 'createdAt',
+  order = 'desc',
+}) => {
+  const from = (page - 1) * limit;
+  const must = [];
+  const filter = [];
+
+  if (search) {
+    must.push({
+      match: {
+        name: {
+          query: search,
+          fuzziness: 'AUTO'
+        }
+      }
+    });
+  }
+
+  if (categoryId) filter.push({ term: { categoryId } });
+  if (typeof hasDiscount === 'boolean') filter.push({ term: { hasDiscount } });
+
+  if (minPrice || maxPrice) {
+    filter.push({
+      range: {
+        price: {
+          gte: minPrice || 0,
+          lte: maxPrice || 99999999
+        }
+      }
+    });
+  }
+
+  if (minViews || maxViews) {
+    filter.push({
+      range: {
+        views: {
+          gte: minViews || 0,
+          lte: maxViews || 99999999
+        }
+      }
+    });
+  }
+
+  const result = await esClient.search({
+    index: 'products',
+    from,
+    size: limit,
+    sort: [`${sortBy}:${order}`],
+    query: {
+      bool: {
+        must,
+        filter
+      }
+    }
+  });
+
+  const total = result.hits.total.value;
+  const data = result.hits.hits.map((hit) => hit._source);
+
+  return {
+    meta: {
+      total,
+      page,
+      perPage: limit,
+      totalPages: Math.ceil(total / limit),
+      hasPrev: page > 1,
+      hasNext: page * limit < total,
+    },
+    data
+  };
+};
+
+
+export const syncAllProductsToElasticsearch = async () => {
+  const products = await Product.findAll();
+  const body = [];
+
+  for (const product of products) {
+    body.push({ index: { _index: 'products', _id: product.id.toString() } });
+    body.push(product.toJSON());
+  }
+
+  if (body.length > 0) {
+    const result = await esClient.bulk({ refresh: true, body });
+    return { success: true, indexed: products.length, errors: result.errors };
+  }
+
+  return { success: true, indexed: 0 };
 };

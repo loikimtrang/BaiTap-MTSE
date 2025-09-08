@@ -1,0 +1,1082 @@
+[
+  {
+    "name": "iPhone 1",
+    "price": 700,
+    "description": "Mô tả sản phẩm iphone số 1",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 404,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 2",
+    "price": 710,
+    "description": "Mô tả sản phẩm iphone số 2",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 498,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 3",
+    "price": 720,
+    "description": "Mô tả sản phẩm iphone số 3",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 307,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 4",
+    "price": 730,
+    "description": "Mô tả sản phẩm iphone số 4",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 45,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 5",
+    "price": 740,
+    "description": "Mô tả sản phẩm iphone số 5",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 489,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 6",
+    "price": 750,
+    "description": "Mô tả sản phẩm iphone số 6",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 152,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 7",
+    "price": 760,
+    "description": "Mô tả sản phẩm iphone số 7",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 50,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 8",
+    "price": 770,
+    "description": "Mô tả sản phẩm iphone số 8",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 405,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 9",
+    "price": 780,
+    "description": "Mô tả sản phẩm iphone số 9",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 90,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 10",
+    "price": 790,
+    "description": "Mô tả sản phẩm iphone số 10",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 111,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 11",
+    "price": 800,
+    "description": "Mô tả sản phẩm iphone số 11",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 432,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 12",
+    "price": 810,
+    "description": "Mô tả sản phẩm iphone số 12",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 151,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 13",
+    "price": 820,
+    "description": "Mô tả sản phẩm iphone số 13",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 351,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 14",
+    "price": 830,
+    "description": "Mô tả sản phẩm iphone số 14",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 238,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 15",
+    "price": 840,
+    "description": "Mô tả sản phẩm iphone số 15",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 252,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 16",
+    "price": 850,
+    "description": "Mô tả sản phẩm iphone số 16",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 109,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 17",
+    "price": 860,
+    "description": "Mô tả sản phẩm iphone số 17",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 473,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 18",
+    "price": 870,
+    "description": "Mô tả sản phẩm iphone số 18",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 402,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 19",
+    "price": 880,
+    "description": "Mô tả sản phẩm iphone số 19",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 188,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 20",
+    "price": 890,
+    "description": "Mô tả sản phẩm iphone số 20",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 79,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 21",
+    "price": 900,
+    "description": "Mô tả sản phẩm iphone số 21",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 482,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 22",
+    "price": 910,
+    "description": "Mô tả sản phẩm iphone số 22",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 413,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 23",
+    "price": 920,
+    "description": "Mô tả sản phẩm iphone số 23",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 54,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 24",
+    "price": 930,
+    "description": "Mô tả sản phẩm iphone số 24",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 401,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 25",
+    "price": 940,
+    "description": "Mô tả sản phẩm iphone số 25",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 233,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 26",
+    "price": 950,
+    "description": "Mô tả sản phẩm iphone số 26",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 150,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 27",
+    "price": 960,
+    "description": "Mô tả sản phẩm iphone số 27",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 428,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 28",
+    "price": 970,
+    "description": "Mô tả sản phẩm iphone số 28",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 130,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 29",
+    "price": 980,
+    "description": "Mô tả sản phẩm iphone số 29",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 353,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 30",
+    "price": 990,
+    "description": "Mô tả sản phẩm iphone số 30",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 266,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 31",
+    "price": 1000,
+    "description": "Mô tả sản phẩm iphone số 31",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 155,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 32",
+    "price": 1010,
+    "description": "Mô tả sản phẩm iphone số 32",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 114,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 33",
+    "price": 1020,
+    "description": "Mô tả sản phẩm iphone số 33",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 95,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPhone 34",
+    "price": 1030,
+    "description": "Mô tả sản phẩm iphone số 34",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 14,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 35",
+    "price": 1040,
+    "description": "Mô tả sản phẩm iphone số 35",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 268,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 36",
+    "price": 1050,
+    "description": "Mô tả sản phẩm iphone số 36",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 175,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 37",
+    "price": 1060,
+    "description": "Mô tả sản phẩm iphone số 37",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 173,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 38",
+    "price": 1070,
+    "description": "Mô tả sản phẩm iphone số 38",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 325,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 39",
+    "price": 1080,
+    "description": "Mô tả sản phẩm iphone số 39",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 444,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPhone 40",
+    "price": 1090,
+    "description": "Mô tả sản phẩm iphone số 40",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329149/iphone-16-pro-max-titan-sa-mac-1-638638962337813406-750x500.jpg",
+    "categoryId": 1,
+    "views": 144,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 1",
+    "price": 900,
+    "description": "Mô tả sản phẩm ipad số 1",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 10,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 2",
+    "price": 910,
+    "description": "Mô tả sản phẩm ipad số 2",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 146,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 3",
+    "price": 920,
+    "description": "Mô tả sản phẩm ipad số 3",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 117,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 4",
+    "price": 930,
+    "description": "Mô tả sản phẩm ipad số 4",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 248,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 5",
+    "price": 940,
+    "description": "Mô tả sản phẩm ipad số 5",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 440,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 6",
+    "price": 950,
+    "description": "Mô tả sản phẩm ipad số 6",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 420,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 7",
+    "price": 960,
+    "description": "Mô tả sản phẩm ipad số 7",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 74,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 8",
+    "price": 970,
+    "description": "Mô tả sản phẩm ipad số 8",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 375,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 9",
+    "price": 980,
+    "description": "Mô tả sản phẩm ipad số 9",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 256,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 10",
+    "price": 990,
+    "description": "Mô tả sản phẩm ipad số 10",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 146,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 11",
+    "price": 1000,
+    "description": "Mô tả sản phẩm ipad số 11",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 299,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 12",
+    "price": 1010,
+    "description": "Mô tả sản phẩm ipad số 12",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 263,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 13",
+    "price": 1020,
+    "description": "Mô tả sản phẩm ipad số 13",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 263,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 14",
+    "price": 1030,
+    "description": "Mô tả sản phẩm ipad số 14",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 165,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 15",
+    "price": 1040,
+    "description": "Mô tả sản phẩm ipad số 15",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 36,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 16",
+    "price": 1050,
+    "description": "Mô tả sản phẩm ipad số 16",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 35,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 17",
+    "price": 1060,
+    "description": "Mô tả sản phẩm ipad số 17",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 98,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 18",
+    "price": 1070,
+    "description": "Mô tả sản phẩm ipad số 18",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 229,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 19",
+    "price": 1080,
+    "description": "Mô tả sản phẩm ipad số 19",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 399,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 20",
+    "price": 1090,
+    "description": "Mô tả sản phẩm ipad số 20",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 257,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 21",
+    "price": 1100,
+    "description": "Mô tả sản phẩm ipad số 21",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 453,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 22",
+    "price": 1110,
+    "description": "Mô tả sản phẩm ipad số 22",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 50,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 23",
+    "price": 1120,
+    "description": "Mô tả sản phẩm ipad số 23",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 467,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 24",
+    "price": 1130,
+    "description": "Mô tả sản phẩm ipad số 24",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 143,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 25",
+    "price": 1140,
+    "description": "Mô tả sản phẩm ipad số 25",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 112,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 26",
+    "price": 1150,
+    "description": "Mô tả sản phẩm ipad số 26",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 315,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 27",
+    "price": 1160,
+    "description": "Mô tả sản phẩm ipad số 27",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 222,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 28",
+    "price": 1170,
+    "description": "Mô tả sản phẩm ipad số 28",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 4,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 29",
+    "price": 1180,
+    "description": "Mô tả sản phẩm ipad số 29",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 315,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 30",
+    "price": 1190,
+    "description": "Mô tả sản phẩm ipad số 30",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 275,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 31",
+    "price": 1200,
+    "description": "Mô tả sản phẩm ipad số 31",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 67,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 32",
+    "price": 1210,
+    "description": "Mô tả sản phẩm ipad số 32",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 53,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 33",
+    "price": 1220,
+    "description": "Mô tả sản phẩm ipad số 33",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 11,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 34",
+    "price": 1230,
+    "description": "Mô tả sản phẩm ipad số 34",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 466,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 35",
+    "price": 1240,
+    "description": "Mô tả sản phẩm ipad số 35",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 162,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 36",
+    "price": 1250,
+    "description": "Mô tả sản phẩm ipad số 36",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 193,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 37",
+    "price": 1260,
+    "description": "Mô tả sản phẩm ipad số 37",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 428,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 38",
+    "price": 1270,
+    "description": "Mô tả sản phẩm ipad số 38",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 409,
+    "hasDiscount": true
+  },
+  {
+    "name": "iPad 39",
+    "price": 1280,
+    "description": "Mô tả sản phẩm ipad số 39",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 200,
+    "hasDiscount": false
+  },
+  {
+    "name": "iPad 40",
+    "price": 1290,
+    "description": "Mô tả sản phẩm ipad số 40",
+    "imageUrl": "https://cdn.tgdd.vn/Products/Images/522/325517/ipad-pro-13-inch-m4-wifi-sliver-1-750x500.jpg",
+    "categoryId": 2,
+    "views": 36,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 1",
+    "price": 1100,
+    "description": "Mô tả sản phẩm macbook số 1",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 290,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 2",
+    "price": 1110,
+    "description": "Mô tả sản phẩm macbook số 2",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 117,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 3",
+    "price": 1120,
+    "description": "Mô tả sản phẩm macbook số 3",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 2,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 4",
+    "price": 1130,
+    "description": "Mô tả sản phẩm macbook số 4",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 229,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 5",
+    "price": 1140,
+    "description": "Mô tả sản phẩm macbook số 5",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 384,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 6",
+    "price": 1150,
+    "description": "Mô tả sản phẩm macbook số 6",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 381,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 7",
+    "price": 1160,
+    "description": "Mô tả sản phẩm macbook số 7",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 95,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 8",
+    "price": 1170,
+    "description": "Mô tả sản phẩm macbook số 8",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 454,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 9",
+    "price": 1180,
+    "description": "Mô tả sản phẩm macbook số 9",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 232,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 10",
+    "price": 1190,
+    "description": "Mô tả sản phẩm macbook số 10",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 241,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 11",
+    "price": 1200,
+    "description": "Mô tả sản phẩm macbook số 11",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 281,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 12",
+    "price": 1210,
+    "description": "Mô tả sản phẩm macbook số 12",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 184,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 13",
+    "price": 1220,
+    "description": "Mô tả sản phẩm macbook số 13",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 337,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 14",
+    "price": 1230,
+    "description": "Mô tả sản phẩm macbook số 14",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 191,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 15",
+    "price": 1240,
+    "description": "Mô tả sản phẩm macbook số 15",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 129,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 16",
+    "price": 1250,
+    "description": "Mô tả sản phẩm macbook số 16",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 304,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 17",
+    "price": 1260,
+    "description": "Mô tả sản phẩm macbook số 17",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 60,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 18",
+    "price": 1270,
+    "description": "Mô tả sản phẩm macbook số 18",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 157,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 19",
+    "price": 1280,
+    "description": "Mô tả sản phẩm macbook số 19",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 329,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 20",
+    "price": 1290,
+    "description": "Mô tả sản phẩm macbook số 20",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 320,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 21",
+    "price": 1300,
+    "description": "Mô tả sản phẩm macbook số 21",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 209,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 22",
+    "price": 1310,
+    "description": "Mô tả sản phẩm macbook số 22",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 222,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 23",
+    "price": 1320,
+    "description": "Mô tả sản phẩm macbook số 23",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 494,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 24",
+    "price": 1330,
+    "description": "Mô tả sản phẩm macbook số 24",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 255,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 25",
+    "price": 1340,
+    "description": "Mô tả sản phẩm macbook số 25",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 438,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 26",
+    "price": 1350,
+    "description": "Mô tả sản phẩm macbook số 26",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 2,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 27",
+    "price": 1360,
+    "description": "Mô tả sản phẩm macbook số 27",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 486,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 28",
+    "price": 1370,
+    "description": "Mô tả sản phẩm macbook số 28",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 46,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 29",
+    "price": 1380,
+    "description": "Mô tả sản phẩm macbook số 29",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 445,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 30",
+    "price": 1390,
+    "description": "Mô tả sản phẩm macbook số 30",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 251,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 31",
+    "price": 1400,
+    "description": "Mô tả sản phẩm macbook số 31",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 61,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 32",
+    "price": 1410,
+    "description": "Mô tả sản phẩm macbook số 32",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 410,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 33",
+    "price": 1420,
+    "description": "Mô tả sản phẩm macbook số 33",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 371,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 34",
+    "price": 1430,
+    "description": "Mô tả sản phẩm macbook số 34",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 472,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 35",
+    "price": 1440,
+    "description": "Mô tả sản phẩm macbook số 35",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 220,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 36",
+    "price": 1450,
+    "description": "Mô tả sản phẩm macbook số 36",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 217,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 37",
+    "price": 1460,
+    "description": "Mô tả sản phẩm macbook số 37",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 337,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 38",
+    "price": 1470,
+    "description": "Mô tả sản phẩm macbook số 38",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 151,
+    "hasDiscount": false
+  },
+  {
+    "name": "Macbook 39",
+    "price": 1480,
+    "description": "Mô tả sản phẩm macbook số 39",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 375,
+    "hasDiscount": true
+  },
+  {
+    "name": "Macbook 40",
+    "price": 1490,
+    "description": "Mô tả sản phẩm macbook số 40",
+    "imageUrl": "https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/335369/macbook-air-13-inch-m4-12-638769625435319422-750x500.jpg",
+    "categoryId": 3,
+    "views": 215,
+    "hasDiscount": true
+  }
+]

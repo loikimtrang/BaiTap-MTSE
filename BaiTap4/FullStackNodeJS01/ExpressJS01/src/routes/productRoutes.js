@@ -7,7 +7,9 @@ import {
   listProductsCtrl,
   getProductCtrl,
   updateProductCtrl,
-  deleteProductCtrl
+  deleteProductCtrl,
+  searchProductsFuzzyCtrl,
+  syncAllProductsCtrl
 } from '../controllers/productController.js';
 
 const router = express.Router();
@@ -19,5 +21,7 @@ router.get('/',      listProductsCtrl);
 router.get('/:id',   getProductCtrl);
 router.put('/:id',   auth, updateProductCtrl);
 router.delete('/:id', auth, deleteProductCtrl);
+router.get('/search', searchProductsFuzzyCtrl); 
+router.post('/sync-es', syncAllProductsCtrl);
 
 export default router;
