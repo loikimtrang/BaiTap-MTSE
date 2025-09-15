@@ -9,7 +9,8 @@ import {
   updateProductCtrl,
   deleteProductCtrl,
   searchProductsFuzzyCtrl,
-  syncAllProductsCtrl
+  syncAllProductsCtrl,
+  similarProductsCtrl
 } from '../controllers/productController.js';
 
 const router = express.Router();
@@ -23,5 +24,6 @@ router.get('/:id',   getProductCtrl);
 router.put('/:id',   auth, updateProductCtrl);
 router.delete('/:id', auth, deleteProductCtrl);
 router.post('/sync-es', syncAllProductsCtrl);
+router.post('/similarProducts', similarProductsCtrl);
 
 export default router;

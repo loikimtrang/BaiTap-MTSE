@@ -6,7 +6,8 @@ import {
   updateProduct,
   deleteProduct,
   searchProductsFuzzy,
-  syncAllProductsToElasticsearch
+  syncAllProductsToElasticsearch,
+  getSimilarProducts
 } from '../services/productService.js';
 
 import { buildApiResponse } from '../utils/responseBuilder.js';
