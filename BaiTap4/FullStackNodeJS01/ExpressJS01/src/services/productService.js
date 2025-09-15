@@ -22,7 +22,7 @@ export const getProductsPaged = async ({
   order = 'ASC',
 }) => {
   const p = Math.max(parseInt(page) || 1, 1);
-  const l = Math.min(Math.max(parseInt(limit) || 12, 1), 100); // chặn 1..100
+  const l = Math.min(Math.max(parseInt(limit) || 12, 1), 100); 
   const offset = (p - 1) * l;
 
   const where = {};
@@ -93,7 +93,7 @@ export const deleteProduct = async (id) => {
 export const searchProductsFuzzy = async ({
   page = 1,
   limit = 12,
-  search,
+  keyword,
   categoryId,
   minPrice,
   maxPrice,
@@ -108,11 +108,11 @@ export const searchProductsFuzzy = async ({
   const filter = [];
 
   // Fuzzy search theo tên sản phẩm
-  if (search) {
+  if (keyword) {
     must.push({
       match: {
         name: {
-          query: search,
+          query: keyword,
           fuzziness: 'AUTO',
         },
       },
@@ -151,7 +151,6 @@ export const searchProductsFuzzy = async ({
     });
   }
 
-  // ✅ VALIDATE FIELD ĐƯỢC SORT
   const allowedSortFields = ['price', 'name', 'views', 'id', 'createdAt'];
   const sortField = allowedSortFields.includes(sortBy) ? sortBy : 'price';
   const sortDirection = (order || 'desc').toLowerCase();
@@ -164,7 +163,7 @@ export const searchProductsFuzzy = async ({
       {
         [sortField]: {
           order: sortDirection,
-          unmapped_type: 'long', // phòng tránh lỗi nếu 1 số shard chưa có field
+          unmapped_type: 'long',
         },
       },
     ],
@@ -220,4 +219,17 @@ export const syncAllProductsToElasticsearch = async () => {
   }
 
   return { success: true, indexed: 0 };
+};
+
+export const getSimilarProducts = async (productId, limit = 6) => {
+  const product = await Product.findByPk(productId);
+  if (!product) return [];
+
+  return Product.findAll({
+    where: {
+      categoryId: product.categoryId,
+      id: { [db.Sequelize.Op.ne]: product.id },
+    },
+    limit,
+  });
 };

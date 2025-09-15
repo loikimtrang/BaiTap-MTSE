@@ -6,7 +6,7 @@ import {
   updateProduct,
   deleteProduct,
   searchProductsFuzzy,
-  syncAllProductsToElasticsearch 
+  syncAllProductsToElasticsearch
 } from '../services/productService.js';
 
 import { buildApiResponse } from '../utils/responseBuilder.js';
@@ -66,9 +66,10 @@ export const deleteProductCtrl = async (req, res) => {
   res.json({ msg: 'Deleted' });
 };
 export const searchProductsFuzzyCtrl = async (req, res) => {
-  const {
+  let {
     page,
     limit,
+    keyword,
     search,
     categoryId,
     minPrice,
@@ -80,10 +81,19 @@ export const searchProductsFuzzyCtrl = async (req, res) => {
     order,
   } = req.query;
 
+  keyword = keyword || search;
+
+
+  if (sortBy?.includes('_')) {
+    const [field, direction] = sortBy.split('_');
+    sortBy = field;
+    order = direction;
+  }
+
   const result = await searchProductsFuzzy({
     page: Number(page) || 1,
     limit: Number(limit) || 12,
-    search,
+    keyword,
     categoryId: categoryId ? Number(categoryId) : undefined,
     minPrice: minPrice ? Number(minPrice) : undefined,
     maxPrice: maxPrice ? Number(maxPrice) : undefined,
@@ -91,8 +101,8 @@ export const searchProductsFuzzyCtrl = async (req, res) => {
       hasDiscount === 'true'
         ? true
         : hasDiscount === 'false'
-        ? false
-        : undefined,
+          ? false
+          : undefined,
     minViews: minViews ? Number(minViews) : undefined,
     maxViews: maxViews ? Number(maxViews) : undefined,
     sortBy,
@@ -112,6 +122,7 @@ export const searchProductsFuzzyCtrl = async (req, res) => {
   );
 };
 
+
 /**
  * API: POST /products/sync-es
  */
@@ -126,4 +137,8 @@ export const syncAllProductsCtrl = async (req, res) => {
       durationMs: Date.now() - req.startTime,
     })
   );
+};
+export const similarProductsCtrl = async (req, res) => {
+  const products = await getSimilarProducts(req.params.productId);
+  res.json(products);
 };

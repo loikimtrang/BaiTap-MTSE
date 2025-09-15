@@ -70,18 +70,6 @@ export default function AppHeader() {
       </div>
 
       <div style={{ display: 'flex', gap: 20 }}>
-        <Dropdown
-          trigger={['click']}
-          menu={{
-            items,
-            onClick: ({ key }) => handleCategoryClick(key),
-          }}
-        >
-          <Button type="default">
-            Danh mục sản phẩm <DownOutlined />
-          </Button>
-        </Dropdown>
-
         <Button type="default" onClick={() => navigate('/user-info')}>
           Thông tin
         </Button>

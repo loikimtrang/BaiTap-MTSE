@@ -21,7 +21,7 @@ export default function HomePage() {
   const [totalItems, setTotalItems] = useState(0);
   const PAGE_SIZE = 20;
   const [searchText, setSearchText] = useState('');
-  const [priceRange, setPriceRange] = useState([0, 10000000]);
+  const [priceRange, setPriceRange] = useState([1, 3000]);
   const [hasDiscount, setHasDiscount] = useState(false);
   const [sortByViews, setSortByViews] = useState(false);
 
@@ -30,13 +30,12 @@ export default function HomePage() {
       try {
         const res = await getCategoryListApi();
         const data = res.data ?? [];
-        setCategories(data);
 
-        if (data.length > 0) {
-          const firstCategoryId = data[0].id;
-          setSelectedCategory(firstCategoryId);
-          fetchProductsByCategory(firstCategoryId, 1);
-        }
+        const categoriesWithAll = [{ id: 'all', name: 'Tất cả' }, ...data];
+        setCategories(categoriesWithAll);
+
+        setSelectedCategory('all');
+        fetchProductsByCategory(null, 1);
       } catch (err) {
         console.error('❌ Lỗi khi lấy danh mục:', err);
       }
@@ -44,12 +43,13 @@ export default function HomePage() {
     fetchCategories();
   }, []);
 
+
   const handleFilterSearch = async (page = 1) => {
     setCurrentPage(page);
 
     try {
       const res = await searchProductsFuzzyApi({
-        categoryId: selectedCategory,
+        categoryId: selectedCategory === 'all' ? undefined : selectedCategory,
         keyword: searchText,
         minPrice: priceRange[0],
         maxPrice: priceRange[1],
@@ -70,7 +70,7 @@ export default function HomePage() {
   const fetchProductsByCategory = async (categoryId, page = 1) => {
     try {
       const res = await getProductListApi({
-        categoryId,
+        ...(categoryId ? { categoryId } : {}),
         page,
         limit: PAGE_SIZE,
       });
@@ -82,18 +82,25 @@ export default function HomePage() {
     }
   };
 
+
   // Khi click danh mục
   const handleCategoryClick = (categoryId) => {
     setSelectedCategory(categoryId);
     setCurrentPage(1);
-    fetchProductsByCategory(categoryId, 1);
+
+    if (categoryId === 'all') {
+      fetchProductsByCategory(null, 1); // load all
+    } else {
+      fetchProductsByCategory(categoryId, 1);
+    }
   };
+
 
   // Khi đổi trang
   const handlePageChange = (page) => {
     setCurrentPage(page);
 
-    if (searchText || hasDiscount || sortByViews || priceRange[0] > 0 || priceRange[1] < 10000000) {
+    if (searchText || hasDiscount || sortByViews || priceRange[0] > 1 || priceRange[1] < 3000) {
       handleFilterSearch(page);
     } else if (selectedCategory) {
       fetchProductsByCategory(selectedCategory, page);
@@ -132,13 +139,13 @@ export default function HomePage() {
                 <strong>Khoảng giá:</strong>
                 <Slider
                   range
-                  step={100000}
+                  step={50}
                   min={0}
-                  max={10000000}
+                  max={3000}
                   value={priceRange}
                   onChange={(value) => setPriceRange(value)}
                 />
-                <div>{priceRange[0].toLocaleString()} ₫ - {priceRange[1].toLocaleString()} ₫</div>
+                <div>{priceRange[0].toLocaleString()} $ - {priceRange[1].toLocaleString()} $</div>
               </div>
 
               <Checkbox
@@ -186,8 +193,27 @@ export default function HomePage() {
                       width: 250,
                       textAlign: 'center',
                       boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
+                      position: 'relative',
                     }}
                   >
+                    {product.hasDiscount && (
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: 8,
+                          left: 8,
+                          backgroundColor: 'red',
+                          color: 'white',
+                          padding: '2px 6px',
+                          borderRadius: 4,
+                          fontSize: 12,
+                          fontWeight: 'bold',
+                        }}
+                      >
+                        SALE
+                      </div>
+                    )}
+
                     <img
                       src={product.imageUrl}
                       alt={product.name}
@@ -195,9 +221,17 @@ export default function HomePage() {
                     />
                     <h3>{product.name}</h3>
                     <p style={{ color: 'gray' }}>{product.description}</p>
-                    <p style={{ fontWeight: 'bold', color: 'green' }}>{product.price.toLocaleString()} ₫</p>
+                    <p style={{ fontWeight: 'bold', color: 'green' }}>
+                      {product.price.toLocaleString()} $
+                    </p>
+
+                    <p style={{ fontSize: 12, color: '#999', marginTop: 8 }}>
+                      {product.views.toLocaleString()} lượt xem
+                    </p>
                   </div>
                 ))}
+
+
               </div>
 
               <Pagination

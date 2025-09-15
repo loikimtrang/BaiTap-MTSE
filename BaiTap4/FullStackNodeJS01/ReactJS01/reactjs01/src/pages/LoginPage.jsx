@@ -57,7 +57,14 @@ export default function LoginPage() {
               Quên mật khẩu?
             </Button>
           </Form.Item>
+
+          <Form.Item>
+            <Button type="link" block onClick={() => navigate('/register')}>
+              Chưa có tài khoản? Đăng ký
+            </Button>
+          </Form.Item>
         </Form>
+
       </Card>
     </div>
   );

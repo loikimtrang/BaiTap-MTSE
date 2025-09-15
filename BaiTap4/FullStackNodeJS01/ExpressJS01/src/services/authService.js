@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import db from '../models/index.js';
+import { sendResetEmail } from './mailService.js';
 const { User, PasswordReset } = db;
 
 export const loginService = async (email, password) => {
@@ -29,8 +30,9 @@ export const requestReset = async (email) => {
   const ttl = new Date(Date.now() + 15 * 60 * 1000); // 15 phút
   await PasswordReset.create({ userId: user.id, token, expiresAt: ttl });
 
-  // Demo: trả token trực tiếp (thực tế hãy gửi email bằng nodemailer)
-  return { EC: 0, DT: { token, expiresAt: ttl } };
+  await sendResetEmail(email, token); // gửi mail ở đây
+
+  return { EC: 0, EM: 'Vui lòng kiểm tra email để đặt lại mật khẩu' };
 };
 
 export const resetPassword = async (token, newPassword) => {

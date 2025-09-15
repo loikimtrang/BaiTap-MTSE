@@ -1,12 +1,14 @@
-import { LockOutlined, KeyOutlined } from '@ant-design/icons';
+import { LockOutlined } from '@ant-design/icons';
 import { Button, Form, Input, Card, message } from 'antd';
 import { resetPasswordApi } from '../utils/api';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 export default function ResetPassword() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const token = searchParams.get('token');
 
-  const onFinish = async ({ token, password }) => {
+  const onFinish = async ({ password }) => {
     try {
       const res = await resetPasswordApi(token, password);
       if (res.data?.EC === 0) {
@@ -24,10 +26,11 @@ export default function ResetPassword() {
     <div style={styles.container}>
       <Card title="Đặt lại mật khẩu" style={styles.card}>
         <Form layout="vertical" onFinish={onFinish}>
-          <Form.Item name="token" label="Token" rules={[{ required: true }]}>
-            <Input prefix={<KeyOutlined />} placeholder="Token từ email" />
-          </Form.Item>
-          <Form.Item name="password" label="Mật khẩu mới" rules={[{ required: true, min: 6 }]}>
+          <Form.Item
+            name="password"
+            label="Mật khẩu mới"
+            rules={[{ required: true, min: 6 }]}
+          >
             <Input.Password prefix={<LockOutlined />} placeholder="Mật khẩu mới" />
           </Form.Item>
           <Form.Item>
@@ -42,6 +45,16 @@ export default function ResetPassword() {
 }
 
 const styles = {
-  container: { height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#f0f2f5' },
-  card: { width: 400, borderRadius: 8, boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }
+  container: {
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: '#f0f2f5',
+  },
+  card: {
+    width: 400,
+    borderRadius: 8,
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+  },
 };

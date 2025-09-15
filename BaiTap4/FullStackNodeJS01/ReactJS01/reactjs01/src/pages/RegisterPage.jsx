@@ -27,18 +27,28 @@ export default function RegisterPage() {
           <Form.Item name="name" label="Tên hiển thị" rules={[{ required: true }]}>
             <Input prefix={<UserOutlined />} placeholder="Tên của bạn" />
           </Form.Item>
+
           <Form.Item name="email" label="Email" rules={[{ required: true, type: 'email' }]}>
             <Input prefix={<MailOutlined />} placeholder="Email" />
           </Form.Item>
+
           <Form.Item name="password" label="Mật khẩu" rules={[{ required: true, min: 6 }]}>
             <Input.Password prefix={<LockOutlined />} placeholder="Mật khẩu" />
           </Form.Item>
+
           <Form.Item>
             <Button type="primary" htmlType="submit" block>
               Đăng ký
             </Button>
           </Form.Item>
+
+          <Form.Item>
+            <Button type="link" block onClick={() => navigate('/login')}>
+              Đã có tài khoản? Đăng nhập
+            </Button>
+          </Form.Item>
         </Form>
+
       </Card>
     </div>
   );
